@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="mavenExecutorSetting">
+    <option name="favoritePanelFullMode" value="false" />
+    <option name="defaultSettings">
+      <ExecutionSettings>
+        <option name="alwaysUpdateSnapshot" value="true" />
+        <option name="useOptionalJvmOptions" value="true" />
+        <option name="isUseOptionalJvmOptions" value="true" />
+        <option name="isAlwaysUpdateSnapshot" value="true" />
+        <option name="selectedProject">
+          <MavenArtifact>
+            <option name="groupId" value="com.sen.test" />
+            <option name="artifactId" value="api" />
+            <option name="version" value="0.0.2-SNAPSHOT" />
+          </MavenArtifact>
+        </option>
+        <option name="collapseModules">
+          <set>
+            <MavenGroupAndArtifactKey>
+              <option name="groupId" value="com.sen.test" />
+              <option name="artifactId" value="api" />
+            </MavenGroupAndArtifactKey>
+          </set>
+        </option>
+      </ExecutionSettings>
+    </option>
+    <option name="isFavoritePanelFullMode" value="false" />
+    <option name="visibleSettings">
+      <set>
+        <option value="PROFILES" />
+        <option value="ADDITIONAL_PARAMETERS" />
+        <option value="OPTIONAL_JVM_OPTIONS" />
+        <option value="THREAD_COUNT" />
+        <option value="FAVORITE" />
+      </set>
+    </option>
+    <option name="visibleSettingsNotInitYet" value="false" />
+    <option name="resultCommandLineChosenProject">
+      <MavenArtifact>
+        <option name="groupId" value="com.sen.test" />
+        <option name="artifactId" value="api" />
+        <option name="version" value="0.0.2-SNAPSHOT" />
+      </MavenArtifact>
+    </option>
+  </component>
+</project>

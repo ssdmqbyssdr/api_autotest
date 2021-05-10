@@ -9,9 +9,12 @@ public class DateFunction  implements Function{
 
 	@Override
 	public String execute(String[] args) {
+		//如果args长度为0 或，args第一个字符串数组为空
 		if (args.length == 0 ||StringUtil.isEmpty(args[0])) {
+			// 以字符串的类型 返回当前时间戳
 			return String.format("%s", new Date().getTime());
 		} else {
+			//返回当前日期，以yyyy-mm-dd 形式
 			return getCurrentDate("yyyy-MM-dd");
 		}
 	}

@@ -103,7 +103,7 @@ public class ApiTest extends TestBase {
 
 	@Parameters({ "excelPath", "sheetName" })
 	@BeforeTest
-	public void readData(@Optional("case/api-data.xls") String excelPath, @Optional("Sheet1") String sheetName) throws DocumentException {
+	public void readData(@Optional("case/api-data.xlsx") String excelPath, @Optional("Sheet1") String sheetName) throws DocumentException {
 		dataList = readExcelData(ApiDataBean.class, excelPath.split(";"),
 				sheetName.split(";"));
 	}

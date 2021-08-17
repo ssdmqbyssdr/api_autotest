@@ -1,25 +1,26 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="接口自动化测试" verbose="1" preserve-order="true" parallel="false">
+<suite name="管理端，用户管理tab测试" verbose="1" preserve-order="true" parallel="false">
 	<test name="自动化测试用例">
 		<parameter name="excelPath" value="case/api-data.xls"></parameter>
-		<parameter name="sheetName" value="Sheet1"></parameter>
+		<parameter name="sheetName" value="项目管理"></parameter>
+		<parameter name="alterRootUrl" value="https://pre-shchildren-manager.sf.ucloud.cn:30317"></parameter>
 		<classes>
 			<class name="test.com.sen.api.ApiTest">
-				<methods>							
+				<methods>
 					<include name="apiTest"></include>
 				</methods>
-			</class>	
+			</class>
 		</classes>
 	</test>
-	<listeners>	
+	<listeners>
 		<listener class-name="com.sen.api.listeners.AutoTestListener"></listener>
 		<listener class-name="com.sen.api.listeners.RetryListener"></listener>
-		<!-- ReportNg 报告  -->	
-		<!--  
-		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener> 
-		-->
+		<!-- ReportNg 报告  -->
+		<!--
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+        -->
 		<!-- ExtentReport 报告  -->
 		<listener class-name="com.sen.api.listeners.ExtentTestNGIReporterListener"></listener>
 	</listeners>
-</suite> 
+</suite>

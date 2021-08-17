@@ -95,7 +95,7 @@
 						</goals>
 						<configuration>
 							<includePluginDependencies>true</includePluginDependencies>
-							<mainClass>com.sen.api.functions.SendEmailFunction</mainClass>
+							<mainClass>com.sen.api.listeners.SendEmailFunction</mainClass>
 							<arguments>
 								<argument>11</argument>
 								<argument>22</argument>

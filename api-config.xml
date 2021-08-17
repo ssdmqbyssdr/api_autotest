@@ -8,7 +8,54 @@
         <header name="Content-Type" value="application/json"/>
     </headers>
     <params>
-    	<param name="test" value="value"/>
+        <!-- 管理端的账号和密码 -->
+        <param name="master_user" value="master_test1"/>
+        <param name="master_password" value="Igqa3W9e6cmId5XMmc/1UVcElc22D+Yz0AYeCOObvA/Ekx+sjtXHKdgd5ZIDbX03hT3Jopk5xEvDaGaEakq6mZxv0SGjL2q+qgU8W/YWAZS84b/dmz7nW1p1MciU3l/1mGgGoB3aAKUq+z49ZnRUQsjRRmne4Hq5kj2KFgP5Sx1UNvCTfg5Cra/KV772eKeaMZZPIKe1vsthMNM0IHSl+OSdtIiErH7QELD6q1unQ26iRyX7lgimToGB/sx8PBIVwyvqRxsI8SDp9eEYlVMGJV7jewu6w5GTrDKv59rcKvOIcdXa3Mxt0Jm3KShEBKMa0h5SoHWp5mDZujoIsDW95w=="/>
+        <!-- 用户端的账号和密码 -->
+        <param name="node_user" value="yubin_node_test1"/>
+        <param name="node_password" value="DVgW3T8NJP3b9kSx5p8uCi/R7HYThFI+9fCFVMzPnvq60QKMSEgrRXLwyDemkz1hKb8Y6HHXjnjVh3XTffh7J/vE0hLcxLsDBsUuRJe53MvmveVrorqGb+yiFSE/v459E9SNqGckkl575ueF/WEXDuBbem9gJ1dQq8ddOeqVVT61TC9iJVJZjK08hakIqztubpHI4dJcreQTap0GOH/MEvnaclC4Q6RxVs6USP3GeqnWp7GpFZHFAL1DQd52ky6ljC0LKXziajYt5Iw3LNDtDsA8/Va5J5Vw1/1TtcSgTtF+fVrVKxagW6MDOf1PKAu+r8oR6FB2o+vLFlkbCtNu7g=="/>
+        <!-- 管理端的角色，用户和组织名称 -->
+        <param name="role_master" value="yubin_aito_master_role"/>
+        <param name="user_master" value="yubin_aito_master_user1"/>
+        <param name="organi_master" value="yubin_aito_master_organ1"/>
+        <!-- 用户端的角色，用户名称 -->
+        <param name="role_node" value="yubin_aito_node_role"/>
+        <param name="user_node" value="yubin_aito_node_user1"/>
+        <param name="organi_node" value="yubin_aito_node_organ1"/>
+        <!-- 用户端的私有数据源名称和数据表名称 -->
+        <param name="database_ip" value="106.75.120.183"/>
+        <param name="mysql_databases1" value="yubin_aito_mysqldb1"/>
+        <param name="mysql_databases2" value="yubin_aito_mysqldb2"/>
+        <param name="mysql_password" value="n1bQzNEIRWj9BGmk7KAdbxSqjsLpKZOMHyjtlMilIEbPTjO1BvzHuHmhevH55WFJD5rOdrySOqeJAyg4WPUABc/XkF+fDoB9Ri+16+9F4zIDwe78AgsFLhHMyXBXtTw4OsxfP7uUlknOkewF599zHd7hCP6kAEyytpoJwwyTzag="/>
+    	<param name="mysql_table1" value="yubin_aito_mysqltable1"/>
+        <param name="mysql_table2" value="yubin_aito_mysqltable2"/>
+
+        <param name="sqlserver_database" value="yubin_aito_sqlserverdb"/>
+        <param name="sqlserver_tables" value="yubin_aito_sqlservertable"/>
+        <param name="sqlserver_password" value="n1bQzNEIRWj9BGmk7KAdbxSqjsLpKZOMHyjtlMilIEbPTjO1BvzHuHmhevH55WFJD5rOdrySOqeJAyg4WPUABc/XkF+fDoB9Ri+16+9F4zIDwe78AgsFLhHMyXBXtTw4OsxfP7uUlknOkewF599zHd7hCP6kAEyytpoJwwyTzag="/>
+
+        <param name="postgres_database" value="yubin_aito_postresdb"/>
+        <param name="postgres_tables" value="yubin_aito_postgretable"/>
+        <param name="postgres_password" value="d5qHbaq2LwpNitjrqghXuGXV6TWwGObdwpB7Rha7MntpBsMMPZkd13OSne4D+c+ykJ8HaafQO9naXyKKkAbicqMPUkbhBXsDoZKYoyTEJFfVRRG/mf7xawq1O2b5nwdTDpNEcZscdFBsOg8NMjuTLaYoD6asdg3MOldIURXTLk8="/>
+
+        <param name="hive_database" value="yubin_aito_hivedb"/>
+        <param name="hive_tables" value="yubin_aito_hivetable"/>
+        <param name="hive_ip" value="117.50.6.107"/>
+        <param name="hive_password" value="d5qHbaq2LwpNitjrqghXuGXV6TWwGObdwpB7Rha7MntpBsMMPZkd13OSne4D+c+ykJ8HaafQO9naXyKKkAbicqMPUkbhBXsDoZKYoyTEJFfVRRG/mf7xawq1O2b5nwdTDpNEcZscdFBsOg8NMjuTLaYoD6asdg3MOldIURXTLk8="/>
+
+
+
+        <!-- 用户端的项目和名称 -->
+        <param name="project" value="yubin_aito_project"/>
+        <param name="mysql_algorithm" value="yubin_aito_mysql_algorithm"/>
+        <param name="python_algorithm" value="yubin_aito_python_algorithm"/>
+        <param name="hive_algorithm" value="yubin_aito_hive_algorithm"/>
+        <param name="postgresql_algorithm" value="yubin_aito_postgresql_algorithm"/>
+        <param name="python_server" value="yubin_aito_python_server"/>
+        <param name="table1" value="yubin_aito_table1"/>
+        <param name="table2" value="yubin_aito_table2"/>
+
+
     </params>
-    <project_name>接口自动化测试报告demo</project_name>
+    <project_name>接口自动化测试报告</project_name>
 </root>

@@ -101,11 +101,14 @@ public class ApiTest extends TestBase {
 		client.getParams().setParameter(CoreConnectionPNames.SO_TIMEOUT, 60000); // 读取超时
 	}
 
-	@Parameters({ "excelPath", "sheetName" })
+	@Parameters({ "excelPath", "sheetName", "alterRootUrl" })
 	@BeforeTest
-	public void readData(@Optional("case/api-data.xlsx") String excelPath, @Optional("Sheet1") String sheetName) throws DocumentException {
+	public void readData(@Optional("case/api-data.xlsx") String excelPath, @Optional("Sheet1") String sheetName, @Optional("") String alterRootUrl) throws DocumentException {
 		dataList = readExcelData(ApiDataBean.class, excelPath.split(";"),
 				sheetName.split(";"));
+		if (alterRootUrl != null && !alterRootUrl.isEmpty()) {
+			rootUrl = alterRootUrl;
+		}
 	}
 
 	/**
@@ -240,7 +243,14 @@ public class ApiTest extends TestBase {
 			HttpDelete deleteMethod = new HttpDelete(url);
 			deleteMethod.setHeaders(publicHeaders);
 			return deleteMethod;
-		} else {
+		}else if ("patch".equalsIgnoreCase(method)) {
+			// 封装patch方法
+			HttpPatch patchMethod = new HttpPatch(url);
+			patchMethod.setHeaders(publicHeaders);
+			HttpEntity entity = parseEntity(param,requestByFormData || "upload".equalsIgnoreCase(method));
+			patchMethod.setEntity(entity);
+			return patchMethod;
+		}else {
 			// 封装get方法
 			HttpGet getMethod = new HttpGet(url);
 			getMethod.setHeaders(publicHeaders);

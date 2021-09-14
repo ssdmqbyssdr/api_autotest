@@ -9,11 +9,11 @@
     </headers>
     <params>
         <!-- 管理端的账号和密码 -->
-        <param name="master_user" value="master_test1"/>
-        <param name="master_password" value="Igqa3W9e6cmId5XMmc/1UVcElc22D+Yz0AYeCOObvA/Ekx+sjtXHKdgd5ZIDbX03hT3Jopk5xEvDaGaEakq6mZxv0SGjL2q+qgU8W/YWAZS84b/dmz7nW1p1MciU3l/1mGgGoB3aAKUq+z49ZnRUQsjRRmne4Hq5kj2KFgP5Sx1UNvCTfg5Cra/KV772eKeaMZZPIKe1vsthMNM0IHSl+OSdtIiErH7QELD6q1unQ26iRyX7lgimToGB/sx8PBIVwyvqRxsI8SDp9eEYlVMGJV7jewu6w5GTrDKv59rcKvOIcdXa3Mxt0Jm3KShEBKMa0h5SoHWp5mDZujoIsDW95w=="/>
+        <param name="master_user" value="yubin_master01"/>
+        <param name="master_password" value="vOO+Xqi+motdQiz4geXRx8vnKcgTLhSv6hmh5FEfeLWFzoo16jxq1MnBh0bHIdWDDUwrakS/t54DfjOdrASINpxx7KnRiWFUppFUW9e9Ni3wqTpZFglkhJAAtZQlEiYYYcjLo8pXwG8x8e6jZd7pgwRKUP1zim9tovct1a2G2P0v0XnZD3XdrRbSEiAyd8BJNKgu6Jlt5qKLyXyL1A7Syaz6Nh8A1czrjp+uR+6ciJXgM/voCEK1aMxVI9bXwWZScyPEwEY6TwgqIYCY82UFcik2O6bSxhZ6JAAiubIWRIY+uthDqGLRU0CMUiH1jLtVUzQGTNpbLVoVDYlo39fmgA=="/>
         <!-- 用户端的账号和密码 -->
-        <param name="node_user" value="yubin_node_test1"/>
-        <param name="node_password" value="DVgW3T8NJP3b9kSx5p8uCi/R7HYThFI+9fCFVMzPnvq60QKMSEgrRXLwyDemkz1hKb8Y6HHXjnjVh3XTffh7J/vE0hLcxLsDBsUuRJe53MvmveVrorqGb+yiFSE/v459E9SNqGckkl575ueF/WEXDuBbem9gJ1dQq8ddOeqVVT61TC9iJVJZjK08hakIqztubpHI4dJcreQTap0GOH/MEvnaclC4Q6RxVs6USP3GeqnWp7GpFZHFAL1DQd52ky6ljC0LKXziajYt5Iw3LNDtDsA8/Va5J5Vw1/1TtcSgTtF+fVrVKxagW6MDOf1PKAu+r8oR6FB2o+vLFlkbCtNu7g=="/>
+        <param name="node_user" value="yubin_nodetest01"/>
+        <param name="node_password" value="A9Nzv8vWgq9t92XcOgavQr9MJ2Ov62gn7KRmLL8lU3cga9FPE+k76NzI8LreASw7jOoCSwktSol9xLKj3jhTooPfQNba0lC0EGqsjrhNE3/PxhhtMpZhz78PI3LPO/z/gQ/KoptY4+ntVzFIaDgP+IOjvFYzEvEKazKCVtRYL00RW0suind6UKo1Vt5HFip98baknaW7zXIdviz9o5KWNfGxjAqEQ9tT0IQ0nBv19E84m6b5dT3njybqj4ypPxURcDV1hOxXACt3r/cUSb0xotqRmtUQg7d/J07ioOBQg/SmrkP6V+aWk0oG1qwwRdn5kykhVqdHRS7V5tGuUDaM6A=="/>
         <!-- 管理端的角色，用户和组织名称 -->
         <param name="role_master" value="yubin_aito_master_role"/>
         <param name="user_master" value="yubin_aito_master_user1"/>
@@ -23,11 +23,18 @@
         <param name="user_node" value="yubin_aito_node_user1"/>
         <param name="organi_node" value="yubin_aito_node_organ1"/>
         <!-- 用户端的私有数据源名称和数据表名称 -->
-        <param name="database_ip" value="106.75.120.183"/>
+<!--        <param name="database_ip" value="106.75.120.183"/>-->
+<!--        <param name="mysql_databases1" value="yubin_aito_mysqldb1"/>-->
+<!--        <param name="mysql_databases2" value="yubin_aito_mysqldb2"/>-->
+<!--        <param name="mysql_password" value="n1bQzNEIRWj9BGmk7KAdbxSqjsLpKZOMHyjtlMilIEbPTjO1BvzHuHmhevH55WFJD5rOdrySOqeJAyg4WPUABc/XkF+fDoB9Ri+16+9F4zIDwe78AgsFLhHMyXBXtTw4OsxfP7uUlknOkewF599zHd7hCP6kAEyytpoJwwyTzag="/>-->
+<!--    	<param name="mysql_table1" value="yubin_aito_mysqltable1"/>-->
+<!--        <param name="mysql_table2" value="yubin_aito_mysqltable2"/>-->
+
+        <param name="database_ip" value="10.0.0.7"/>
         <param name="mysql_databases1" value="yubin_aito_mysqldb1"/>
         <param name="mysql_databases2" value="yubin_aito_mysqldb2"/>
-        <param name="mysql_password" value="n1bQzNEIRWj9BGmk7KAdbxSqjsLpKZOMHyjtlMilIEbPTjO1BvzHuHmhevH55WFJD5rOdrySOqeJAyg4WPUABc/XkF+fDoB9Ri+16+9F4zIDwe78AgsFLhHMyXBXtTw4OsxfP7uUlknOkewF599zHd7hCP6kAEyytpoJwwyTzag="/>
-    	<param name="mysql_table1" value="yubin_aito_mysqltable1"/>
+        <param name="mysql_password" value="geMX6dKzXOS0Rx4RAF6Pymm7sES/jz3bLesWsPDIf7OguJZ2K1izqx+X3ucryhWV2g/VxWS1fZn5AY2jXdba4fHQQJpgyfBFfoXzF+wvmNhZ8uz85uVSxK3MrNR+Bw3YFtW99owRUhce/E4yKVeKfKnUhZ/Q1mpM898zkGcuRrQ="/>
+        <param name="mysql_table1" value="yubin_aito_mysqltable1"/>
         <param name="mysql_table2" value="yubin_aito_mysqltable2"/>
 
         <param name="sqlserver_database" value="yubin_aito_sqlserverdb"/>
@@ -42,8 +49,6 @@
         <param name="hive_tables" value="yubin_aito_hivetable"/>
         <param name="hive_ip" value="117.50.6.107"/>
         <param name="hive_password" value="d5qHbaq2LwpNitjrqghXuGXV6TWwGObdwpB7Rha7MntpBsMMPZkd13OSne4D+c+ykJ8HaafQO9naXyKKkAbicqMPUkbhBXsDoZKYoyTEJFfVRRG/mf7xawq1O2b5nwdTDpNEcZscdFBsOg8NMjuTLaYoD6asdg3MOldIURXTLk8="/>
-
-
 
         <!-- 用户端的项目和名称 -->
         <param name="project" value="yubin_aito_project"/>

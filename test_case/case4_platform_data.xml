@@ -4,8 +4,8 @@
 		<!-- 用户端添加mysql，sqlserver，postgresql，hive数据源及数据表测试用例 -->
 		<!-- 该测试用例依赖用例3，需要先上线主题，服务，行业和标签 -->
 		<parameter name="excelPath" value="case/api-data.xls"></parameter>
-		<parameter name="sheetName" value="管理端-用户管理"></parameter>
-		<parameter name="alterRootUrl" value="https://pre-shchildren-manager-sf.ucloud.cn:30317"></parameter>
+		<parameter name="sheetName" value="用户端-数据管理-发布数据"></parameter>
+		<parameter name="alterRootUrl" value="https://pre-shchildren-manager.sf.ucloud.cn:30317"></parameter>
 		<classes>
 			<class name="test.com.sen.api.ApiTest">
 				<methods>							

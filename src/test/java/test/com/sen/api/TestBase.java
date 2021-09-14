@@ -157,9 +157,6 @@ public class TestBase {
 
 	/**
 	 * 获取格式化后的值
-	 * 
-	 * @param sourchJson
-	 * @param key
 	 * @return
 	 */
 	private String getBuildValue(String sourchJson, String key) {

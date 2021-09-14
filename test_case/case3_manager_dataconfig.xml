@@ -4,7 +4,7 @@
 		<!-- 管理端创建发布服务，行业，主题和标签的测试用例 -->
 		<parameter name="excelPath" value="case/api-data.xls"></parameter>
 		<parameter name="sheetName" value="管理端-配置中心-数据分类管理"></parameter>
-		<parameter name="alterRootUrl" value="https://pre-shchildren-manager-admin.sf.ucloud.cn:30317"></parameter>
+		<parameter name="alterRootUrl" value="https://prd-shchildren-manager-admin.sf.ucloud.cn:30317"></parameter>
 		<classes>
 			<class name="test.com.sen.api.ApiTest">
 				<methods>							

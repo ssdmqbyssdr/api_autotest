@@ -1,17 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="systemTest">
     <suite-files>
-        <suite-file path="test_case/testng.xml"></suite-file>
-        <suite-file path="test_case/testng2.xml"></suite-file>
+        <suite-file path="test_case/case1_manager_account.xml"></suite-file>
+        <suite-file path="test_case/case2_platform_account.xml"></suite-file>
+        <suite-file path="test_case/case3_manager_dataconfig.xml"></suite-file>
+<!--        <suite-file path="test_case/case4_platform_data.xml"></suite-file>-->
+<!--        <suite-file path="test_case/case5_manager_publish_data.xml"></suite-file>-->
     </suite-files>
     <listeners>
         <listener class-name="com.sen.api.listeners.AutoTestListener"></listener>
         <listener class-name="com.sen.api.listeners.RetryListener"></listener>
-        <!-- ReportNg 报告  -->
-        <!--
-        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
-        -->
+<!--         ReportNg 报告-->
+<!--        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>-->
+<!--        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>-->
         <!-- ExtentReport 报告  -->
         <listener class-name="com.sen.api.listeners.ExtentTestNGIReporterListener"></listener>
     </listeners>

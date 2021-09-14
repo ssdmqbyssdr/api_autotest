@@ -3,8 +3,8 @@
 	<test name="自动化测试用例">
 		<!-- 用户端创建角色，用户测试用例 -->
 		<parameter name="excelPath" value="case/api-data.xls"></parameter>
-		<parameter name="sheetName" value="管理端-用户管理"></parameter>
-		<parameter name="alterRootUrl" value="https://pre-shchildren-manager-sf.ucloud.cn:30317"></parameter>
+		<parameter name="sheetName" value="用户端-用户管理"></parameter>
+		<parameter name="alterRootUrl" value="https://prd-shchildren-manager.sf.ucloud.cn:30317"></parameter>
 		<classes>
 			<class name="test.com.sen.api.ApiTest">
 				<methods>
